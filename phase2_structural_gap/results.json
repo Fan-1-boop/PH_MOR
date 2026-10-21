@@ -1,0 +1,169 @@
+{
+  "description": "strictly proper stable passive SISO PH with two decoupled oscillators",
+  "parameters": {
+    "a1": 0.5,
+    "omega1": 2.2,
+    "b1": 2.4,
+    "a2": 0.09,
+    "omega2": 1.3,
+    "b2": 1.34
+  },
+  "A": [
+    [
+      -0.5,
+      2.2,
+      0.0,
+      0.0
+    ],
+    [
+      -2.2,
+      -0.5,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -0.09,
+      1.3
+    ],
+    [
+      0.0,
+      0.0,
+      -1.3,
+      -0.09
+    ]
+  ],
+  "B": [
+    2.4,
+    0.0,
+    1.34,
+    0.0
+  ],
+  "skew_norm": 0.0,
+  "dissipation_smallest_eigen": 0.09,
+  "signed_Hankel_eigenvalues": [
+    -5.069942671375435,
+    -2.102869084068058,
+    2.5766758843201236,
+    4.926627303301884
+  ],
+  "HSV": [
+    5.069942671375439,
+    4.926627303301875,
+    2.5766758843201183,
+    2.1028690840680575
+  ],
+  "unconstrained_Glover_lower_sigma2": 4.926627303301875,
+  "structure_aware_lower_bound_negative": 5.069942671375435,
+  "relative_certified_gap_percent": 2.90899553082713,
+  "best_passive_degree_le_1_exact": 5.069942671375439,
+  "signed_residue_candidate": {
+    "err": 4.926627304482893,
+    "alpha": 0.08891451123182967,
+    "k": -0.9057539838859805,
+    "nfev": 1776
+  },
+  "passive_optimization_check": {
+    "err": 5.069942671378273,
+    "alpha": 720.1075873789972,
+    "k": 0.0008613030111153108,
+    "nfev": 339
+  },
+  "D_needed_if_one_allows_feedthrough_to_repair_positive_realness": 10.186795960947016,
+  "compressed_Ritz_certificates": [
+    {
+      "name": "real_12",
+      "dimension": 12,
+      "negative_Ritz": 2.939360217011864,
+      "ratio_to_exact": 0.5797620224795241,
+      "gram_condition": 4756139.631421722,
+      "Ritz_spectrum": [
+        -2.939360217011864,
+        -0.4902516194415456,
+        -1.5342734202913373e-13,
+        -1.2874877325328412e-14,
+        -1.4095502441590139e-15,
+        -7.518860851466809e-16,
+        2.0370484538370503e-17,
+        5.814716944530792e-16,
+        4.123451531142438e-14,
+        8.40160281958406e-13,
+        0.7991783088947568,
+        3.1459687871208732
+      ]
+    },
+    {
+      "name": "slow_pair_2",
+      "dimension": 2,
+      "negative_Ritz": 4.922122584703352,
+      "ratio_to_exact": 0.9708438346834442,
+      "gram_condition": 1.1483787567506354,
+      "Ritz_spectrum": [
+        -4.922122584703352,
+        4.626627182315952
+      ]
+    },
+    {
+      "name": "fast_pair_2",
+      "dimension": 2,
+      "negative_Ritz": 2.056472416662372,
+      "ratio_to_exact": 0.4056204477958066,
+      "gram_condition": 1.5694427344082011,
+      "Ritz_spectrum": [
+        -2.056472416662372,
+        2.9500285944470264
+      ]
+    },
+    {
+      "name": "both_pairs_4",
+      "dimension": 4,
+      "negative_Ritz": 5.069942671375435,
+      "ratio_to_exact": 1.0,
+      "gram_condition": 9.805353320674481,
+      "Ritz_spectrum": [
+        -5.069942671375435,
+        -2.1028690840680593,
+        2.57667588432012,
+        4.92662730330188
+      ]
+    }
+  ],
+  "robustness": [
+    {
+      "relative_perturbation": 0.01,
+      "strict_gap_frequency": 1.0,
+      "ratio_median": 1.0290593866840858,
+      "ratio_q05": 1.0286272701620482,
+      "ratio_q95": 1.0293458521326648
+    },
+    {
+      "relative_perturbation": 0.025,
+      "strict_gap_frequency": 1.0,
+      "ratio_median": 1.0290143423127494,
+      "ratio_q05": 1.027554413149388,
+      "ratio_q95": 1.0295257236106823
+    },
+    {
+      "relative_perturbation": 0.05,
+      "strict_gap_frequency": 1.0,
+      "ratio_median": 1.0284580072394602,
+      "ratio_q05": 1.0238768218367529,
+      "ratio_q95": 1.0295862956270163
+    },
+    {
+      "relative_perturbation": 0.1,
+      "strict_gap_frequency": 0.9875,
+      "ratio_median": 1.0268937152255075,
+      "ratio_q05": 1.0080893511685143,
+      "ratio_q95": 1.0294302358246727
+    },
+    {
+      "relative_perturbation": 0.2,
+      "strict_gap_frequency": 0.7825,
+      "ratio_median": 1.0187724770074673,
+      "ratio_q05": 1.0,
+      "ratio_q95": 1.0284372876474983
+    }
+  ]
+}
